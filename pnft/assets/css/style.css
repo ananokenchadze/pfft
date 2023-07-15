@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: "reg";
+  src: url(../fonts/Inter/Inter-Regular.ttf);
+}
+@font-face {
+  font-family: "med";
+  src: url(../fonts/Inter/Inter-Medium.ttf);
+}
+@font-face {
+  font-family: "bold";
+  src: url(../fonts/Inter/Inter-Bold.ttf);
+}
+:root {
+  --reg: "reg";
+  --med: "med";
+  --bold: "bold";
+}
+.brand-name {
+  font-family: var(--med);
+  font-size: 16px;
+}
+.nft-title {
+  font-family: var(--bold);
+  color: #344054;
+}
+.forgot {
+  color: #5429ff;
+  font-family: var(--med);
+}
+input {
+  border: 1px solid #d0d5dd;
+  border-radius: 8px;
+}
+#img {
+  width: 691px;
+  height: 760px;
+  position: absolute;
+  top: 20px;
+}
+#btn-purple {
+  background-color: #5429ff;
+}
+#google-btn {
+  border: 1px solid #d0d5dd;
+}
+.btn-text {
+  font-family: var(--med);
+  font-size: 16px;
+}
+@media screen and (max-width: 500px) {
+  .brand-name {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  #pls {
+    font-size: 14px;
+  }
+  #home {
+    display: flex;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 900px) {
+  .imgbox {
+    display: none;
+  }
+}
